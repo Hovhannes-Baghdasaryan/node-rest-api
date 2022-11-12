@@ -3,6 +3,7 @@ import mongoose from "mongoose";
 import postsRouter from "./routes/posts.js"
 import bodyParser from "body-parser";
 import cors from "cors";
+import server from "express/lib/application.js";
 //
 // (async () => {
 //     try {
@@ -24,4 +25,5 @@ app.get('/', (req, res) => {
     res.json("home page")
 })
 
-app.listen(process.env.PORT || 5000, () => console.log("listen"))
+const PORT = server.listen(process.env.PORT || 3000);
+app.listen(PORT, () => console.log("listen"))
