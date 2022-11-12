@@ -25,5 +25,4 @@ app.get('/', (req, res) => {
     res.json("home page")
 })
 
-const PORT = server.listen(process.env.PORT || 3000);
-app.listen(PORT, () => console.log("listen"))
+app.listen(process.env.PORT, () => console.log("listen"))
