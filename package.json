@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon --require dotenv/config app.js"
+    "dev": "nodemon --require dotenv/config app.js",
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
