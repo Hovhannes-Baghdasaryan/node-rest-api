@@ -8,7 +8,7 @@
     "npm": "8.15.0"
   },
   "scripts": {
-    "start": "node app.js"
+    "start": "nodemon --require dotenv/config app.js"
   },
   "author": "",
   "license": "ISC",

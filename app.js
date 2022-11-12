@@ -25,4 +25,4 @@ app.get('/', (req, res) => {
     res.json("home page")
 })
 
-app.listen(process.env.PORT, () => console.log("listen"))
+app.listen(process.env.PORT || 5000, () => console.log("listen"))
