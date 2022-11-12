@@ -24,7 +24,4 @@ app.get('/', (req, res) => {
     res.json("home page")
 })
 
-// connect to DB
-
-
 app.listen(5000, () => console.log("listen"))
